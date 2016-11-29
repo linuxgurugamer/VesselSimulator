@@ -1,4 +1,4 @@
-// 
+﻿// 
 //     Kerbal Engineer Redux
 // 
 //     Copyright (C) 2014 CYBUTEK
@@ -59,7 +59,7 @@ namespace KerbalEngineer.VesselSimulator
         private List<Part> partList = new List<Part>();
         private double simpleTotalThrust;
         private double stageStartMass;
-        private Vector3 stageStartCom;
+        private Vector3d stageStartCom;
         private double stageTime;
         private double stepEndMass;
         private double stepStartMass;
@@ -110,7 +110,7 @@ namespace KerbalEngineer.VesselSimulator
             }
         }
 
-        private Vector3 ShipCom
+        private Vector3d ShipCom
         {
             get
             {
@@ -638,7 +638,6 @@ namespace KerbalEngineer.VesselSimulator
                 for (int j = i; j >= 0; j--)
                 {
                     stages[i].totalDeltaV += stages[j].deltaV;
-                    stages[i].totalResourceMass += stages[j].resourceMass;
                     stages[i].totalTime += stages[j].time;
                     stages[i].partCount = i > 0 ? stages[i].totalPartCount - stages[i - 1].totalPartCount : stages[i].totalPartCount;
                 }

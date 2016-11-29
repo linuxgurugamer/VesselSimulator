@@ -1,4 +1,4 @@
-// 
+﻿// 
 //     Kerbal Engineer Redux
 // 
 //     Copyright (C) 2014 CYBUTEK
@@ -103,10 +103,7 @@ namespace KerbalEngineer.VesselSimulator
 
             foreach (var assembly in AssemblyLoader.loadedAssemblies)
             {
-                if (SimManager.logOutput)
-                {
-                    MonoBehaviour.print("Assembly:" + assembly.assembly);
-                }
+                MonoBehaviour.print("Assembly:" + assembly.assembly);
 
                 var name = assembly.assembly.ToString().Split(',')[0];
 

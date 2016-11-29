@@ -1,4 +1,4 @@
-// 
+﻿// 
 //     Kerbal Engineer Redux
 // 
 //     Copyright (C) 2014 CYBUTEK
@@ -37,7 +37,7 @@ namespace KerbalEngineer.VesselSimulator
         public double realMass;
         public double baseMass;
         public double baseMassForCoM;
-        public Vector3 centerOfMass;
+        public Vector3d centerOfMass;
         public double baseCost;
         public int decoupledInStage;
         public bool fuelCrossFeed;

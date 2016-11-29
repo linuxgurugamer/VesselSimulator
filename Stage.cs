@@ -1,4 +1,4 @@
-// 
+﻿// 
 //     Kerbal Engineer Redux
 // 
 //     Copyright (C) 2014 CYBUTEK
@@ -49,7 +49,6 @@ namespace KerbalEngineer.VesselSimulator
         public int totalPartCount = 0;
         public int partCount = 0;
         public double resourceMass = 0.0;
-        public double totalResourceMass = 0.0;
         public double maxThrustTorque = 0.0;
         public double thrustOffsetAngle = 0.0;
         public float maxMach = 0.0f;
